@@ -1,0 +1,32 @@
+{
+    "current": [
+        {
+            "name": "Pablo Picasso: Structures Of Invention. The Unity Of A Life;s Work",
+            "date": "From 1 March 2024 to 1 May 2027",
+            "location": " The Museo Picasso Málaga, Málaga, Spain",
+            "description": "The Museo Picasso Málaga's new exhibition, Pablo Picasso: Structures of Invention. The Unity of a Life's Work, offers a comprehensive exploration of Picasso's career, featuring 150 works that showcase his revolutionary approach to art. Curated by Michael FitzGerald, the exhibition highlights the balance between innovation and retrospection that fueled Picasso's creative process, presenting works from various stages of his career side by side. Through this unique curation, the exhibition reveals the continuity in Picasso’s evolution, connecting his cubist, classical, and surrealist innovations. Complementing this are five ‘Focus Exhibitions’, delving into key influences on Picasso, such as African sculpture and his wartime experiences in Paris, offering fresh insights into the life and legacy of one of modern art's most transformative figures.",
+            "image": "https://d7hftxdivxxvm.cloudfront.net/?height=800&quality=50&resize_to=fit&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F7Cy35UJrTBIKai0x8eQ4zg%2Fmain.jpg&width=605"
+        },
+        {
+            "name": "Picasso printmaker",
+            "date": "From 7 November 2024 to 30 March 2025",
+            "location": "The British Museum, London",
+            "description": "This exhibition offers insights into Picasso's life through his art, including his complex relationships with women and his partnerships with printers, publishers and other artists. Spanning his entire career, it follows his engagement with different printmaking techniques and his changing approaches to making art.",
+            "image": "https://www.britishmuseum.org/sites/default/files/styles/uncropped_huge/public/2024-09/Picasso-still-life-lamp-2000x1661.png"
+        },
+        {
+            "name": "Collecting Modernism: Pablo Picasso to Winifred Nicholson",
+            "date": "From 25 September 2024 to 02 March 2025",
+            "location": "Charleston, Lewes, UK",
+            "description": "This exhibition presents a fascinating narrative of how a significant modern art collection was shaped through the intertwined lives of three queer collectors; Eddie Sackville-West, Eardley Knollys, and Mattei Radev. Featuring over 80 works, the exhibition highlights pieces by influential 20th-century artists such as Pablo Picasso, Amedeo Modigliani, and members of the Bloomsbury Group, including Roger Fry and Vanessa Bell. This intimate set of works, loaned from the Radev Collection, offers a rare glimpse into the evolution of modernism across Europe, while also revealing the personal connections and friendships that shaped the collection over time.",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYeLJwyoX_1T8OnmBfmtFVLxzzMfzr2Ro7jg&s"
+        },
+        {
+            "name": "Picasso exhibition in Milan",
+            "date": "From 20 September 2024 to 2 February 2025",
+            "location": "Palazzo Reale Milano",
+            "description": "The exhibition is divided into six thematic sections, offering visitors a journey through about 80 works from the Musée National Picasso in Paris. Paintings, sculptures, drawings, prints, photographs, and archival documents intertwine to tell not only Picasso's artistic evolution but also his political vision and his relationship with the contemporary events of his time.",
+            "image": "https://www.hotelmorfeomilano.com/media/zoo/images/mosta_picasso_milano_2024_2025_a43709f41063b76946d935f9eca5f160.jpg"
+        }
+    ]
+}

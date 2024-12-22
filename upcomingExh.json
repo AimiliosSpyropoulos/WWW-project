@@ -1,0 +1,33 @@
+{
+    "upcoming": [
+        {
+            "name": "Picasso: From the Studio",
+            "date": "From 11 October 2025 to 22 February 2026",
+            "location": "National Gallery of Ireland",
+            "description": "The National Gallery of Ireland, in collaboration with the Musée Picasso national-Paris, is delighted to present Picasso: From the Studio, a major monographic exhibition of the work of Pablo Picasso (1881-1973), proudly supported by KPMG Ireland, Exhibition Partner.",
+            "image": "https://www.nationalgallery.ie/sites/default/files/styles/content_hero/public/2024-10/picasso-portrait-marie-therese-musee-picasso.jpg?itok=4eeEdgY9&cache-buster=000758063b&coords_hash=c3daf1a152"
+        },
+        {
+            "name": "Picasso for Asia: A Conversation",
+            "date": "From 15 March to 20 July 2025",
+            "location": "M+ museum of contemporary visual culture",
+            "description": "The groundbreaking exhibition will bring together more than sixty works by Spanish artist Pablo Picasso and around eighty works by Asian and Asian-diasporic artists from the M+ Collections",
+            "image": "https://www.mplus.org.hk/api/images/8121/width-820|format-webp/"
+        },
+        {
+            "name": "Picasso: The Royan Sketchbooks",
+            "date": "From 31 January to 30 April 2025",
+            "location": "Fondation Museo Picasso Málaga",
+            "description": "Launching the 2025 programme at the start of the year, Picasso: the Royan sketchbooks will analyse the sketchbooks produced by the artist in the French town of Royan, where he lived for a year following the outbreak of World War II. This will be followed next summer by the work of Oscar Domínguez, the Surrealist artist from Tenerife, which will occupy the museum’s temporary exhibition galleries in parallel to an exhibition on the Belgian artist Farah Atassi entitled Genius Loci. Finally, next autumn the museum will be presenting Picasso. Memory and desire, focusing on the artist’s output between 1925 and 1945. ",
+            "image": "https://artdaily.cc/imagenes/2024/12/07/muspic-2.jpg"
+        },
+        {
+            "name": "Picasso for Asia: A Conversation",
+            "date": "From 5 March to 13 July 2025",
+            "location": "M+, West Kowloon Cultural District, Hong Kong",
+            "description": "Picasso for Asia: A Conversation is a landmark exhibition at M+, Hong Kong's global museum of contemporary visual culture, showcasing over 60 works by Picasso alongside 80 pieces by Asian and Asian-diasporic artists from the M+ Collections. Co-curated by M+ and Musée National Picasso-Paris, the exhibition explores Picasso's enduring influence on modern and contemporary art, placing his works in conversation with Asian artists across generations. This is the first time masterpieces from Musée Picasso-Paris are being exhibited alongside Asian works, highlighting themes of cultural exchange, artistic adaptation, and the global impact of Picasso’s legacy.",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ihhK7-_1EXiWZ1BoU8lD2ygSLSHHXYXtqQ&s"
+        }
+       
+    ]
+}

@@ -1,0 +1,238 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #bae8e8;
+}
+
+header,
+nav,
+aside,
+main,
+footer {
+    padding: 5px;
+    border: 1px solid #0f6db5;
+}
+
+header {
+    background-color: #bae8e8;
+    text-align: center;
+    border-bottom: none;
+}
+
+nav {
+    background-color: #bae8e8;
+    text-align: center;
+    border-right: 2px solid #0f6db5;
+}
+
+aside {
+    background-color: #bae8e8;
+    width: 200px;
+    flex-shrink: 0;
+    padding: 10px;
+    border-top: none;
+}
+
+footer {
+    border-color: #0f6db5;
+    border-top: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+main {
+    flex-grow: 1;
+    background-color: #bae8e8;
+    padding: 20px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    margin-left: 221px;
+    margin-top: -39px;
+    border-bottom: none;
+    border-top: none;
+}
+
+.overlay {
+    text-align: center;
+    background-color: #faf3f3;
+    font-weight: bold;
+}
+
+main h1,
+main h2 {
+    color: #0f6db5;
+    margin-bottom: 15px;
+    font-size: 25px
+}
+
+main,
+p,
+h1,
+h2,
+li {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+main p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+h2 {
+    text-align: left;
+}
+
+.TitleHeader {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    color: #000000;
+    text-align: center;
+    background-color: #bae8e8;
+    border: 2px #000000;
+    border-radius: 2px;
+    padding: 2px;
+    letter-spacing: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        order: 2;
+    }
+
+    main {
+        margin-left: 0;
+        order: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .TitleHeader {
+        font-size: 1.5em;
+        letter-spacing: 20px;
+    }
+
+    nav button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    main {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .TitleHeader {
+        font-size: 1.2em;
+        letter-spacing: 10px;
+    }
+
+    nav button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    main {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+main table {
+    width: 200%;
+    border-collapse:collapse;
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* borders twn pinakwn */
+main table th,
+main table td {
+    padding: 12px 15px;
+    border: 1px solid #0f6db5;
+}
+/* headers twn pinakwn me links/exhibitions */
+main table th {
+    background-color: #0f6db5;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+/* GIA TO LOGIN FORM APO MANAGEMENT - MAIN */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #0f6db5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container label,
+.login-container input {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #0f6db5;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #0f6db5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(15, 109, 181, 0.5);
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0f6db5;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+input[type="button"]:hover {
+    transform: scale(1.1);
+    background-color: #0f6db5;
+}
+

@@ -1,0 +1,106 @@
+{
+    "paintings": [
+        {
+            "title": "Figure At The Seaside",
+            "year": "1931",
+            "link": "https://www.pablopicasso.org/figures-at-the-seaside.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/figures-at-the-seaside.jpg"
+        },
+        {
+            "title": "Girl Before A Mirror",
+            "year": "1932",
+            "link": "https://www.pablopicasso.org/girl-before-mirror.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/girl-before-a-mirror.jpg"
+        },
+        {
+            "title": "Girl in a Chemise",
+            "year": "1904",
+            "link": "https://www.pablopicasso.org/girl-in-a-chemise.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/girl-in-a-chemise.jpg"
+        },
+        {
+            "title": "Guernica",
+            "year": "1937",
+            "link": "https://www.pablopicasso.org/guernica.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/guernica3.jpg"
+        },
+        {
+            "title": "Harlequin with Glass",
+            "year": "1905",
+            "link": "https://www.pablopicasso.org/harlequin-with-glass.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/harlequin-with-glass.jpg"
+        },
+        {
+            "title": "Harlequin",
+            "year": "1901",
+            "link": "https://www.pablopicasso.org/harlequin.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/harlequin.jpg"
+        },
+        {
+            "title": "La Vie",
+            "year": "1903",
+            "link": "https://www.pablopicasso.org/la-vie.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/la-vie.jpg"
+        },
+        {
+            "title": "Child with a Dove",
+            "year": "1901",
+            "link": "https://www.pablopicasso.org/child-with-a-dove.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/child-with-a-dove.jpg"
+        },
+        {
+            "title": "Jacqueline Kneeling",
+            "year": "1954",
+            "link": "https://www.pablopicasso.org/jacqueline-kneeling.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/jacqueline-kneeling.jpg"
+        },
+        {
+            "title": "Girl Before A Mirror",
+            "year": "1932",
+            "link": "https://www.pablopicasso.org/girl-before-mirror.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/girl-before-a-mirror.jpg"
+        },
+        {
+            "title": "Girl in a Chemise",
+            "year": "1904",
+            "link": "https://www.pablopicasso.org/girl-in-a-chemise.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/girl-in-a-chemise.jpg"
+        },
+        {
+            "title": "Guernica",
+            "year": "1937",
+            "link": "https://www.pablopicasso.org/guernica.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/guernica3.jpg"
+        },
+        {
+            "title": "Harlequin with Glass",
+            "year": "1905",
+            "link": "https://www.pablopicasso.org/harlequin-with-glass.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/harlequin-with-glass.jpg"
+        },
+        {
+            "title": "Harlequin",
+            "year": "1901",
+            "link": "https://www.pablopicasso.org/harlequin.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/harlequin.jpg"
+        },
+        {
+            "title": "La Vie",
+            "year": "1903",
+            "link": "https://www.pablopicasso.org/la-vie.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/la-vie.jpg"
+        },
+        {
+            "title": "Child with a Dove",
+            "year": "1901",
+            "link": "https://www.pablopicasso.org/child-with-a-dove.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/child-with-a-dove.jpg"
+        },
+        {
+            "title": "Jacqueline Kneeling",
+            "year": "1954",
+            "link": "https://www.pablopicasso.org/jacqueline-kneeling.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/jacqueline-kneeling.jpg"
+        }
+    ]
+}

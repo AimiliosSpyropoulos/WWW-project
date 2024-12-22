@@ -1,0 +1,100 @@
+{
+    "portraits": [
+        {
+            "title": "Self Portrait",
+            "year": "1901",
+            "link": "https://www.pablopicasso.org/self-portrait.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/self-portrait.jpg"
+        },
+        {
+            "title": "Pablo Picasso Self Portrait",
+            "year": "1907",
+            "link": "https://www.wikiart.org/en/pablo-picasso/self-portrait-1907",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/self-portrait-1907.jpg"
+        },
+        {
+            "title": "Portrait of Aunt Pepa",
+            "year": "1896",
+            "link": "https://www.pablopicasso.org/portrait-of-aunt-pepa.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/portrait-of-aunt-pepa.jpg"
+        },
+        {
+            "title": "Portrait of Dora Maar",
+            "year": "1937",
+            "link": "https://www.pablopicasso.org/portrait-of-dora-maar-1941.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/portrait-of-dora-maar-1941.jpg"
+        },
+        {
+            "title": "Portrait of Gertrude Stein",
+            "year": "1905",
+            "link": "https://www.pablopicasso.org/portrait-of-gertrude-stein.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/portrait-of-gertrude-stein.jpg"
+        },
+        {
+            "title": "Portrait of Sabartes",
+            "year": "1939",
+            "link": "https://www.pablopicasso.org/portrait-of-sabartes.jsp",
+            "image":"https://www.pablopicasso.org/assets/img/paintings/portrait-of-sabartes.jpg"
+        },
+        {
+            "title": "Self Portrait With Palette",
+            "year": "1906",
+            "link": "https://www.pablopicasso.org/self-portrait-with-palette.jsp",
+            "image":"https://www.pablopicasso.org/assets/img/paintings/self-portrait-with-palette.jpg"
+        },
+        {
+            "title": "Portrait of Ambroise Vollard",
+            "year": "1910",
+            "link": "https://www.pablopicasso.org/portrait-of-ambroise-vollard.jsp",
+            "image":"https://www.pablopicasso.org/assets/img/paintings/portrait-of-ambroise-vollard.jpg"
+        },
+        {
+            "title": "Self Portrait",
+            "year": "1901",
+            "link": "https://www.pablopicasso.org/self-portrait.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/self-portrait.jpg"
+        },
+        {
+            "title": "Pablo Picasso Self Portrait",
+            "year": "1907",
+            "link": "https://www.wikiart.org/en/pablo-picasso/self-portrait-1907",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/self-portrait-1907.jpg"
+        },
+        {
+            "title": "Portrait of Aunt Pepa",
+            "year": "1896",
+            "link": "https://www.pablopicasso.org/portrait-of-aunt-pepa.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/portrait-of-aunt-pepa.jpg"
+        },
+        {
+            "title": "Portrait of Dora Maar",
+            "year": "1937",
+            "link": "https://www.pablopicasso.org/portrait-of-dora-maar-1941.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/portrait-of-dora-maar-1941.jpg"
+        },
+        {
+            "title": "Portrait of Gertrude Stein",
+            "year": "1905",
+            "link": "https://www.pablopicasso.org/portrait-of-gertrude-stein.jsp",
+            "image": "https://www.pablopicasso.org/assets/img/paintings/portrait-of-gertrude-stein.jpg"
+        },
+        {
+            "title": "Portrait of Sabartes",
+            "year": "1939",
+            "link": "https://www.pablopicasso.org/portrait-of-sabartes.jsp",
+            "image":"https://www.pablopicasso.org/assets/img/paintings/portrait-of-sabartes.jpg"
+        },
+        {
+            "title": "Self Portrait With Palette",
+            "year": "1906",
+            "link": "https://www.pablopicasso.org/self-portrait-with-palette.jsp",
+            "image":"https://www.pablopicasso.org/assets/img/paintings/self-portrait-with-palette.jpg"
+        },
+        {
+            "title": "Portrait of Ambroise Vollard",
+            "year": "1910",
+            "link": "https://www.pablopicasso.org/portrait-of-ambroise-vollard.jsp",
+            "image":"https://www.pablopicasso.org/assets/img/paintings/portrait-of-ambroise-vollard.jpg"
+        }
+    ]
+}

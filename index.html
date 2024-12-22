@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Picasso</title>
+    <link rel="website icon" type="png"
+        href="https://istoriatexnespolitismos.wordpress.com/wp-content/uploads/2014/02/pablo-picasso-1.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="photos.css">
+    <script src="buttons.js" defer></script>
+    <script src="fetch.js">defer</script>
+    <script src="login.js">defer</script>
+    <script src="fetchExh.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="TitleHeader">PABLO PICASSO</h1>
+
+    </header>
+    <!-- buttons gia to kentriko menu -->
+    <nav><b>Main Menu:</b>
+        <button id="buttonBiography">Biography</button>
+        <button id="buttonArtwork">Artwork</button>
+        <button id="buttonExhibitions">Exhibitions</button>
+        <button id="buttonLinks">Links</button>
+        <button id="buttonManagement">User Management</button>
+    </nav>
+    <!-- buttons gia to pleuriko menu -->
+    <aside><b>Side Menu:</b>
+        <div class="wrapper">
+            <div id="set1" class="hide">
+                <button id="buttonEarlyLifeside">Early Life</button>
+                <button id="buttonCareerside">Career</button>
+                <button id="buttonFinalYearsside">Final Years</button>
+            </div>
+            <div id="set2" class="hide">
+                <button id="buttonPortraits">Portraits</button>
+                <button id="buttonPaintings">Paintings</button>
+                <button id="buttonDrawings">Drawings </button>
+            </div>
+            <div id="set3" class="hide">
+                <button id="buttonPastExh">Past</button>
+                <button id="buttonCurrentExh">Current </button>
+                <button id="buttonUpcomingExh">Upcoming</button>
+            </div>
+            <div id="set4" class="hide">
+                <button id="buttonPortraitsLink">Portraits</button>
+                <button id="buttonPaintingsLink">Paintings</button>
+                <button id="buttonDrawingsLink">Drawings</button>
+            </div>
+            <div id="set5" class="hide">
+                <button id="buttonLogin">Login</button>
+            </div>
+            <div id="set6" class="hide">
+                <button id="buttonEditExcibitions">Exchibitions Settings</button>
+                <button id="buttonEditLinks">Links Settings</button>
+                <button id="buttonLogout" onclick="logout()">Logout</button>
+            </div>
+            <div id="set7" class="hide">
+                <button id="buttonLogout" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <!-- periexomena kentrikhs selidas -->
+        <b>Main Page:</b>
+        <div class="wrapper2">
+            <!-- BIOGRAFIA TEXT -->
+            <div id="contentEarlyLife" class="hide">
+                <h1>Early Life</h1>
+                <h2>General Information</h2>
+                <br>
+                <p>Pablo Diego José Francisco de Paula Juan Nepomuceno Crispín Cipriano de la Santísima Trinidad María
+                    de los Remedios Alarcón y Herrera Ruiz Picasso (25 October 1881 - 8 April 1973) was a Spanish
+                    painter, sculptor,printmaker, ceramicist, and theatre designer who spent most of his adult life in
+                    France. One of the
+                    most influential artists of the 20th century, he is known for co-founding the Cubist movement, the
+                    invention of constructed sculpture, the co-invention of collage, and for the wide variety of
+                    styles that he helped develop and explore. Among his most famous works are the proto-Cubist Les
+                    Demoiselles d'Avignon (1907) and the anti-war painting Guernica (1937), a dramatic portrayal of the
+                    bombing of Guernica by German and Italian air forces during the Spanish Civil War. </p>
+                <p>Picasso demonstrated extraordinary artistic talent in his early years, painting in a naturalistic
+                    manner through his childhood and adolescence. During the first decade of the 20th century, his style
+                    changed as he experimented with different theories, techniques, and ideas. After 1906, the Fauvist
+                    work of the older artist Henri Matisse motivated Picasso to explore more radical styles, beginning a
+                    fruitful rivalry between the two artists, who subsequently were often paired by critics as the
+                    leaders of modern art.</p>
+                <p>Picasso's output, especially in his early career, is often periodized. While the names of many of his
+                    later periods are debated, the most commonly accepted periods in his work are the Blue Period
+                    (1901-1904), the Rose Period (1904-1906), the African-influenced Period (1907-1909), Analytic Cubism
+                    (1909-1912), and Synthetic Cubism (1912-1919), also referred to as the Crystal period. Much of
+                    Picasso's work of the late 1910s and early 1920s is in a neoclassical style, and his work in the
+                    mid-1920s often has characteristics of Surrealism. His later work often combines elements of his
+                    earlier styles. </p>
+                <p>Exceptionally prolific throughout the course of his long life, Picasso achieved universal renown and
+                    immense fortune for his revolutionary artistic accomplishments, and became one of the best-known
+                    figures in 20th-century art. </p>
+                <br>
+                <div class="image">
+                    <img src="https://www.thefamouspeople.com/profiles/images/pablo-picasso-7.jpg"
+                        alt="Pablo Picasso 1">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Pablo Picasso 2">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgvEk2uy_juyu-Nv2pRJDsfADicUXF4N4a_x80fNT-sIUMq5aWiDQOE9u6-mtej3BpR-NHKrCWsl9JpvpMjamDuSqOrECt-nhYRnpZceU5xp5deARW0vvzb8lFDPxWEM2t0-MF_N3c9aeG/s640/Snip20151210_3.png"
+                        alt="Pablo Picasso 3">
+                </div>
+                <br>
+                <h2>Childhood and education</h2>
+                <p> Picasso was born at 23:15 on 25 October 1881, in the city of Málaga, Andalusia, in southern
+                    Spain. He was the first child of Don José Ruiz y Blasco (1838-1913) and María Picasso y
+                    López. Picasso's family was of middle-class background. His father was a painter who specialized
+                    in naturalistic depictions of birds and other game. For most of his life, Ruiz was a professor of
+                    art at the School of Crafts and a curator of a local museum.</p>
+                <p> Picasso's birth certificate and the record of his baptism include very long names, combining those
+                    of various saints and relatives. Ruiz y Picasso were his paternal and maternal surnames,
+                    respectively, per Spanish custom. The surname "Picasso" comes from Liguria, a coastal region of
+                    north-western Italy. Pablo's maternal great-grandfather, Tommaso Picasso, moved to Spain around
+                    1807.</p>
+                <p>Picasso showed a passion and a skill for drawing from an early age. According to his mother, his
+                    first words were "piz, piz", a shortening of lápiz, the Spanish word for "pencil". From the age
+                    of seven, Picasso received formal artistic training from his father in figure drawing and oil
+                    painting. Ruiz was a traditional academic artist and instructor, who believed that proper training
+                    required disciplined copying of the masters, and drawing the human body from plaster casts and live
+                    models. His son became preoccupied with art to the detriment of his classwork</p>
+                <p>The family moved to A Coruña in 1891, where his father became a professor at the School of Fine Arts.
+                    They stayed for almost four years. On one occasion, the father found his son painting over his
+                    unfinished sketch of a pigeon. Observing the precision of his son's technique, an apocryphal story
+                    relates, Ruiz felt that the thirteen-year-old Picasso had surpassed him, and vowed to give up
+                    painting, though paintings by him exist from later years.</p>
+                <p>In 1895, Picasso was traumatized when his seven-year-old sister, Conchita, died of diphtheria.
+                    After her death, the family moved to Barcelona, where Ruiz took a position at its School of Fine
+                    Arts. Picasso thrived in the city, regarding it in times of sadness or nostalgia as his true
+                    home. Ruiz persuaded the officials at the academy to allow his son to take an entrance exam for
+                    the advanced class. This process often took students a month, but Picasso completed it in a week,
+                    and the jury admitted him, at just 13. As a student, Picasso lacked discipline but made friendships
+                    that would affect him in later life. His father rented a small room for him close to home so he
+                    could work alone, yet he checked up on him numerous times a day, judging his drawings. The two
+                    argued frequently.</p>
+                <p>Picasso's father and uncle decided to send the young artist to Madrid's Real Academia de Bellas Artes
+                    de San Fernando, the country's foremost art school. At age 16, Picasso set off for the first
+                    time on his own, but he disliked formal instruction and stopped attending classes soon after
+                    enrollment. Madrid held many other attractions. The Prado housed paintings by Diego Velázquez,
+                    Francisco Goya, and Francisco Zurbarán. Picasso especially admired the works of El Greco; elements
+                    such as his elongated limbs, arresting colours, and mystical visages are echoed in Picasso's later
+                    work.</p>
+                <br>
+                <h2>Personal life</h2>
+                <p>From early adolescence, Picasso maintained both superficial and intense amatory sexual relationships.
+                    Biographer John Richardson stated that 'work, sex, and tobacco' were his addictions. Picasso
+                    was married twice and had four children by three women:
+                    <br>
+                    * Paulo Picasso (4 February 1921 - 5 June 1975, Paul Joseph Picasso) - with Olga Khokhlova
+                    <br>
+                    * Maya (5 September 1935 - 20 December 2022, Maria de la Concepcion Picasso) - with Marie-Thérèse
+                    Walter
+                    <br>
+                    * Claude (15 May 1947 - 24 August 2023, Claude Pierre Pablo Picasso) and Paloma (born 19 April
+                    1949,
+                    Anne Paloma Picasso) - with Françoise Gilot
+                    Photographer and painter Dora Maar was a constant companion and lover of Picasso. The two were
+                    closest in the late 1930s and early 1940s, and it was Maar who documented the painting of Guernica.
+                </p>
+                <p>The women in Picasso's life played an important role in the emotional and erotic aspects of his
+                    creative expression, and the tumultuous nature of these relationships has been considered vital to
+                    his artistic process. Many of these women functioned as muses for him, and their inclusion in his
+                    extensive oeuvre granted them a place in art history. A largely recurring motif in his body of
+                    work is the female form. The variations in his relationships informed and collided with his
+                    progression of style throughout his career. For example, portraits created of his first wife, Olga,
+                    were rendered in a naturalistic style during his Neoclassical period. His relationship with
+                    Marie-Thérèse Walter inspired many of his surrealist pieces, as well as what is referred to as his
+                    "Year of Wonders". The reappearance of an acrobats theme in 1905 put an end to his "Blue
+                    Period", marking the transition into his "Rose Period". This transition has been incorrectly
+                    attributed to the presence of Fernande Olivier in his life.</p>
+                <p>Picasso has been characterised as a womaniser and a misogynist, being quoted as saying to long-time
+                    partner Françoise Gilot that "women are machines for suffering." He later allegedly told her,
+                    "For me there are only two kinds of women: goddesses and doormats." In her memoir, Picasso, My
+                    Grandfather, Marina Picasso writes of his treatment of women, "He submitted them to his animal
+                    sexuality, tamed them, bewitched them, ingested them, and crushed them onto his canvas. After he had
+                    spent many nights extracting their essence, once they were bled dry, he would dispose of them.</p>
+                <p>Of the several important women in his life, two - lover Marie-Thèrése Walter and his second wife
+                    Jacqueline Roque - died by suicide. Others, notably his first wife Olga Khokhlova and lover Dora
+                    Maar, succumbed to nervous breakdowns. His son, Paulo, developed a fatal alcoholism due to
+                    depression. His grandson, Pablito, also died by suicide that same year by ingesting bleach when he
+                    was barred by Jacqueline Roque from attending the artist's funeral.</p>
+            </div>
+            <div id="contentCareer" class="hide">
+                <h1>Career</h1>
+                <br>
+                <h2>Before 1900</h2>
+                <p>Picasso's training under his father began before 1890. His progress can be traced in the collection
+                    of early works now held by the Museu Picasso in Barcelona, which provides one of the most
+                    comprehensive extant records of any major artist's beginnings. During 1893 the juvenile quality
+                    of his earliest work falls away, and by 1894 his career as a painter can be said to have begun.
+                    The academic realism apparent in the works of the mid-1890s is well displayed in The First Communion
+                    (1896), a large composition that depicts his sister, Lola. In the same year, at the age of 14, he
+                    painted Portrait of Aunt Pepa, a vigorous and dramatic portrait that Juan-Eduardo Cirlot has called
+                    "without a doubt one of the greatest in the whole history of Spanish painting."</p>
+
+                <p>In 1897, his realism began to show a Symbolist influence, for example, in a series of landscape
+                    paintings rendered in non-naturalistic violet and green tones. What some call his Modernist period
+                    (1899-1900) followed. His exposure to the work of Rossetti, Steinlen, Toulouse-Lautrec and Edvard
+                    Munch, combined with his admiration for favourite old masters such as El Greco, led Picasso to a
+                    personal version of modernism in his works of this period.</p>
+
+                <p>Picasso made his first trip to Paris, then the art capital of Europe, in 1900. There, he met his
+                    first Parisian friend, journalist and poet Max Jacob, who helped Picasso learn the language and its
+                    literature. Soon they shared an apartment; Max slept at night while Picasso slept during the day and
+                    worked at night. These were times of severe poverty, cold, and desperation. Much of his work was
+                    burned to keep the small room warm. During the first five months of 1901, Picasso lived in Madrid,
+                    where he and his anarchist friend Francisco de Asís Soler founded the magazine Arte Joven (Young
+                    Art), which published five issues. Soler solicited articles and Picasso illustrated the journal,
+                    mostly contributing grim cartoons depicting and sympathizing with the state of the poor. The first
+                    issue was published on 31 March 1901, by which time the artist had started to sign his work
+                    Picasso. From 1898 he signed his works as "Pablo Ruiz Picasso", then as "Pablo R. Picasso" until
+                    1901. The change does not seem to imply a rejection of the father figure. Rather, he wanted to
+                    distinguish himself from others; initiated by his Catalan friends who habitually called him by his
+                    maternal surname, much less current than the paternal Ruiz.</p>
+                <br>
+                <h2>Blue Period: 1901-1904</h2>
+                <p>Picasso's Blue Period (1901-1904), characterized by sombre paintings rendered in shades of blue and
+                    blue-green only occasionally warmed by other colours, began either in Spain in early 1901 or in
+                    Paris in the second half of the year.Many paintings of gaunt mothers with children date from
+                    the Blue Period, during which Picasso divided his time between Barcelona and Paris. In his austere
+                    use of colour and sometimes doleful subject matter—prostitutes and beggars are frequent
+                    subjects—Picasso was influenced by a trip through Spain and by the suicide of his friend Carles
+                    Casagemas. Starting in autumn of 1901, he painted several posthumous portraits of Casagemas
+                    culminating in the gloomy allegorical painting La Vie (1903), now in the Cleveland Museum of Art.
+                </p>
+                <p>The same mood pervades the well-known etching The Frugal Repast (1904), which depicts a blind man
+                    and a sighted woman, both emaciated, seated at a nearly bare table. Blindness, a recurrent theme in
+                    Picasso's works of this period, is also represented in The Blindman's Meal (1903, the Metropolitan
+                    Museum of Art) and in the portrait of Celestina (1903). Other Blue Period works include Portrait of
+                    Soler and Portrait of Suzanne Bloch. </p>
+                <br>
+                <h2>Rose Period: 1904-1906</h2>
+                <p>The Rose Period (1904-1906) is characterized by a lighter tone and style utilizing orange and
+                    pink colours and featuring many circus people, acrobats and harlequins known in France as
+                    saltimbanques. The harlequin, a comedic character usually depicted in checkered patterned clothing,
+                    became a personal symbol for Picasso. Picasso met Fernande Olivier, a bohemian artist who became his
+                    mistress, in Paris in 1904. Olivier appears in many of his Rose Period paintings, many of which
+                    are influenced by his warm relationship with her, in addition to his increased exposure to French
+                    painting. The generally upbeat and optimistic mood of paintings in this period is reminiscent of the
+                    1899-1901 period (i.e., just prior to the Blue Period), and 1904 can be considered a transition year
+                    between the two periods. </p>
+                <p>By 1905, Picasso became a favourite of American art collectors Leo and Gertrude Stein. Their older
+                    brother Michael Stein and his wife Sarah also became collectors of his work. Picasso painted a
+                    portrait of Gertrude Stein and one of her nephew Allan Stein. Gertrude Stein became Picasso's
+                    principal patron, acquiring his drawings and paintings and exhibiting them in her informal Salon at
+                    her home in Paris. At one of her gatherings in 1905, he met Henri Matisse, who was to become a
+                    lifelong friend and rival. The Steins introduced him to Claribel Cone and her sister Etta, who were
+                    American art collectors; they also began to acquire Picasso's and Matisse's paintings. Eventually,
+                    Leo Stein moved to Italy. Michael and Sarah Stein became patrons of Matisse, while Gertrude Stein
+                    continued to collect Picassos.</p>
+                <p>In 1907, Picasso joined an art gallery that had recently been opened in Paris by Daniel-Henry
+                    Kahnweiler, a German art historian and art collector who became one of the premier French art
+                    dealers of the 20th century. He was among the first champions of Pablo Picasso, Georges Braque and
+                    the Cubism that they jointly developed. Kahnweiler promoted burgeoning artists such as André Derain,
+                    Kees van Dongen, Fernand Léger, Juan Gris, Maurice de Vlaminck and several others who had come from
+                    all over the globe to live and work in Montparnasse at the time.</p>
+                <br>
+                <h2>African art and primitivism: 1907-1909</h2>
+                <p>Picasso's African-influenced Period (1907-1909) begins with his painting Les Demoiselles d'Avignon.
+                    The three figures on the left were inspired by Iberian sculpture, but he repainted the faces of the
+                    two figures on the right after being powerfully impressed by African artefacts he saw in June 1907
+                    in the ethnographic museum at Palais du Trocadéro. When he displayed the painting to
+                    acquaintances in his studio later that year, the nearly universal reaction was shock and revulsion;
+                    Matisse angrily dismissed the work as a hoax. Picasso did not exhibit Les Demoiselles publicly
+                    until 1916. </p>
+                <p>Other works from this period include Nude with Raised Arms (1907) and Three Women (1908). Formal
+                    ideas developed during this period lead directly into the Cubist period that follows. Analytic
+                    cubism (1909-1912) is a style of painting Picasso developed with Georges Braque using monochrome
+                    brownish and neutral colours. Both artists took apart objects and "analyzed" them in terms of their
+                    shapes. Picasso and Braque's paintings at this time share many similarities.</p>
+                <p>In Paris, Picasso entertained a distinguished coterie of friends in the Montmartre and Montparnasse
+                    quarters, including André Breton, poet Guillaume Apollinaire, writer Alfred Jarry and Gertrude
+                    Stein. In 1911, Picasso was arrested and questioned about the theft of the Mona Lisa from the
+                    Louvre. Suspicion for the crime had initially fallen upon Apollinaire due to his links to Géry
+                    Pieret, an artist with a history of thefts from the gallery. Apollinaire in turn implicated his
+                    close friend Picasso, who had also purchased stolen artworks from the artist in the past. Afraid of
+                    a conviction that could result in his deportation to Spain, Picasso denied having ever met
+                    Apollinaire. Both were later cleared of any involvement in the painting's disappearance.</p>
+                <br>
+                <h2>Synthetic cubism: 1912-1919</h2>
+                <p>Synthetic cubism (1912-1919) was a further development of the genre of cubism, in which cut paper
+                    fragments - often wallpaper or portions of newspaper pages - were pasted into compositions, marking
+                    the first use of collage in fine art.</p>
+                <p>Between 1915 and 1917, Picasso began a series of paintings depicting highly geometric and minimalist
+                    Cubist objects, consisting of either a pipe, a guitar or a glass, with an occasional element of
+                    collage. "Hard-edged square-cut diamonds", notes art historian John Richardson, "these gems do not
+                    always have upside or downside". "We need a new name to designate them," wrote Picasso to
+                    Gertrude Stein. The term "Crystal Cubism" was later used as a result of visual analogies with
+                    crystals at the time. These "little gems" may have been produced by Picasso in response
+                    to critics who had claimed his defection from the movement, through his experimentation with
+                    classicism within the so-called return to order following the war.</p>
+                <p>After acquiring some fame and fortune, Picasso left Olivier for Marcelle Humbert, also known as Eva
+                    Gouel. Picasso included declarations of his love for Eva in many Cubist works. Picasso was
+                    devastated by her premature death from illness at the age of 30 in 1915.</p>
+                <p>At the outbreak of World War I in August 1914, Picasso was living in Avignon. Braque and Derain were
+                    mobilized and Apollinaire joined the French artillery, while the Spaniard Juan Gris remained from
+                    the Cubist circle. During the war, Picasso was able to continue painting uninterrupted, unlike his
+                    French comrades. His paintings became more sombre and his life changed with dramatic consequences.
+                    Kahnweiler's contract had terminated on his exile from France. At this point, Picasso's work would
+                    be taken on by the art dealer Léonce Rosenberg. After the loss of Eva Gouel, Picasso had an affair
+                    with Gaby Lespinasse. During the spring of 1916, Apollinaire returned from the front wounded. They
+                    renewed their friendship, but Picasso began to frequent new social circles.</p>
+                <p>Towards the end of World War I, Picasso became involved with Serge Diaghilev's Ballets Russes. Among
+                    his friends during this period were Jean Cocteau, Jean Hugo, Juan Gris, and others. In the summer of
+                    1918, Picasso married Olga Khokhlova, a ballerina with Sergei Diaghilev's troupe, for whom Picasso
+                    was designing a ballet, Erik Satie's Parade, in Rome; they spent their honeymoon near Biarritz in
+                    the villa of glamorous Chilean art patron Eugenia Errázuriz.</p>
+                <p>Khokhlova introduced Picasso to high society, formal dinner parties, and other dimensions of the life
+                    of the rich in 1920s Paris. The two had a son, Paulo Picasso, who would grow up to be a
+                    motorcycle racer and chauffeur to his father. Khokhlova's insistence on social propriety clashed
+                    with Picasso's bohemian tendencies and the two lived in a state of constant conflict. During the
+                    same period that Picasso collaborated with Diaghilev's troupe, he and Igor Stravinsky collaborated
+                    on Pulcinella in 1920. Picasso took the opportunity to make several drawings of the composer.</p>
+                <p>In 1927, Picasso met 17-year-old Marie-Thérèse Walter and began a secret affair with her. Picasso's
+                    marriage to Khokhlova soon ended in separation rather than divorce, as French law required an even
+                    division of property in the case of divorce, and Picasso did not want Khokhlova to have half his
+                    wealth. The two remained legally married until Khokhlova's death in 1955. Picasso carried on a
+                    long-standing affair with Marie-Thérèse Walter and fathered a daughter with her, named Maya.
+                    Marie-Thérèse lived in the vain hope that Picasso would one day marry her, and hanged herself four
+                    years after Picasso's death.</p>
+                <br>
+                <h2>Neoclassicism and surrealism: 1919-1929</h2>
+                <p>In February 1917, Picasso made his first trip to Italy. In the period following the upheaval
+                    of
+                    World War I, Picasso produced work in a neoclassical style. This "return to order" is evident in the
+                    work of many European artists in the 1920s, including André Derain, Giorgio de Chirico, Gino
+                    Severini,
+                    Jean Metzinger, the artists of the New Objectivity movement and of the Novecento Italiano movement.
+                    Picasso's paintings and drawings from this period frequently recall the work of Raphael and
+                    Ingres.
+                </p>
+                <p>In 1925 the Surrealist writer and poet André Breton declared Picasso as 'one of ours' in his
+                    article Le
+                    Surréalisme et la peinture, published in Révolution surréaliste. Les Demoiselles was reproduced for
+                    the
+                    first time in Europe in the same issue. Yet Picasso exhibited Cubist works at the first Surrealist
+                    group
+                    exhibition in 1925; the concept of 'psychic automatism in its pure state' defined in the Manifeste
+                    du
+                    surréalisme never appealed to him entirely. He did at the time develop new imagery and formal syntax
+                    for
+                    expressing himself emotionally, "releasing the violence, the psychic fears and the eroticism that
+                    had
+                    been largely contained or sublimated since 1909", writes art historian Melissa McQuillan. Although
+                    this
+                    transition in Picasso's work was informed by Cubism for its spatial relations, "the fusion of ritual
+                    and
+                    abandon in the imagery recalls the primitivism of the Demoiselles and the elusive psychological
+                    resonances of his Symbolist work", writes McQuillan. Surrealism revived Picasso's attraction to
+                    primitivism and eroticism.</p>
+                <br>
+                <h2>The Great Depression, Guernica, and the MoMA exhibition: 1930-1939</h2>
+                <p>During the 1930s, the minotaur replaced the harlequin as a common motif in his work. His use of the
+                    minotaur came partly from his contact with the surrealists, who often used it as their symbol, and
+                    it appears in Picasso's Guernica. The minotaur and Picasso's mistress Marie-Thérèse Walter are
+                    heavily featured in his celebrated Vollard Suite of etchings.</p>
+                <p>Arguably Picasso's most famous work is his depiction of the German bombing of Guernica during the
+                    Spanish Civil War - Guernica. This large canvas embodies for many the inhumanity, brutality and
+                    hopelessness of war. Asked to explain its symbolism, Picasso said, "It isn't up to the painter to
+                    define the symbols. Otherwise it would be better if he wrote them out in so many words! The public
+                    who look at the picture must interpret the symbols as they understand them.</p>
+                <p>Guernica was exhibited in July 1937 at the Spanish Pavilion at the Paris International Exposition,
+                    and then became the centrepiece of an exhibition of 118 works by Picasso, Matisse, Braque and Henri
+                    Laurens that toured Scandinavia and England. After the victory of Francisco Franco in Spain, the
+                    painting was sent to the United States to raise funds and support for Spanish refugees. Until 1981
+                    it was entrusted to the Museum of Modern Art (MoMA) in New York City, as it was Picasso's expressed
+                    desire that the painting should not be delivered to Spain until liberty and democracy had been
+                    established in the country.</p>
+                <p>Before Guernica, Picasso had never addressed political themes in his art. The politicized nature of
+                    the work is largely attributed to his romantic relationship at the time with the French anti-fascist
+                    activist and surrealist photographer, Dora Maar. In addition, her black and white photographs
+                    are likely to have influenced the black and white scheme of Guernica, in stark contrast to Picasso's
+                    usual colorful paintings. "Maar's practice of photography influenced the art of Picasso - she had a
+                    great influence on his work," said Antoine Romand, a Dora Maar expert. "She contested him. She
+                    pushed him to do something new and to be more creative politically." Maar had exclusive access
+                    to Picasso's studio to observe and photograph the creation of Guernica. At Picasso's request,
+                    Maar painted parts of the dying horse.</p>
+                <p>In 1939 and 1940, the Museum of Modern Art in New York City, under its director Alfred Barr, a
+                    Picasso enthusiast, held a major retrospective of Picasso's principal works until that time. This
+                    exhibition lionized Picasso, brought into full public view in America the scope of his artistry, and
+                    resulted in a reinterpretation of his work by contemporary art historians and scholars.
+                    According to Jonathan Weinberg, "Given the extraordinary quality of the show and Picasso's enormous
+                    prestige, generally heightened by the political impact of Guernica ... the critics were surprisingly
+                    ambivalent". Picasso's "multiplicity of styles" was disturbing to one journalist; another
+                    described him as "wayward and even malicious"; Alfred Frankenstein's review in ARTnews concluded
+                    that Picasso was both charlatan and genius.</p>
+            </div>
+            <div id="contentFinalYears" class="hide">
+                <h1>Final Years</h1>
+                <br>
+                <h2>World War II and late 1940s: 1939-1949</h2>
+                <p>During World War II, Picasso remained in Paris while the Germans occupied the city. Picasso's
+                    artistic style did not fit the Nazi ideal of art, so he did not exhibit during this time. He was
+                    often harassed by the Gestapo. During one search of his apartment, an officer saw a photograph of
+                    the painting Guernica. "Did you do that?" the German asked Picasso. "No," he replied, "You did."</p>
+                <p>Retreating to his studio, he continued to paint, producing works such as the Still Life with Guitar
+                    (1942) and The Charnel House (1944-48). Although the Germans outlawed bronze casting in Paris,
+                    Picasso continued regardless, using bronze smuggled to him by the French Resistance.</p>
+                <p>Around this time, Picasso wrote poetry as an alternative outlet. Between 1935 and 1959 he wrote more
+                    than 300 poems. Largely untitled except for a date and sometimes the location of where they were
+                    written (for example "Paris 16 May 1936"), these works were gustatory, erotic, and at times
+                    scatological, as were his two full-length plays, Desire Caught by the Tail (1941), The Four Little
+                    Girls (1949) and The Burial of the Count of Orgaz (1959)</p>
+                <p>In 1944, after the liberation of Paris, Picasso, then 63 years old, began a romantic relationship
+                    with a young art student named Françoise Gilot. She was 40 years younger than he was. Picasso grew
+                    tired of his mistress Dora Maar; Picasso and Gilot began to live together. Eventually, they had two
+                    children: Claude Picasso, born in 1947 and Paloma Picasso, born in 1949. In her 1964 book Life with
+                    Picasso, Gilot describes his abusive treatment and myriad infidelities which led her to leave
+                    him, taking the children with her. This was a severe blow to Picasso.</p>
+                <p>Picasso had affairs with women of an even greater age disparity than his and Gilot's. While still
+                    involved with Gilot, in 1951 Picasso had a six-week affair with Geneviève Laporte, who was four
+                    years younger than Gilot. By his 70s, many paintings, ink drawings and prints have as their theme an
+                    old, grotesque dwarf as the doting lover of a beautiful young model. Jacqueline Roque (1927-1986)
+                    worked at the Madoura Pottery in Vallauris on the French Riviera, where Picasso made and painted
+                    ceramics. She became his lover, and then his second wife in 1961. The two were together for the
+                    remainder of Picasso's life.</p>
+                <p>His marriage to Roque was also a means of revenge against Gilot; with Picasso's encouragement, Gilot
+                    had divorced her then-husband, Luc Simon, with the plan to marry Picasso to secure the rights of her
+                    children as Picasso's legitimate heirs. Picasso had already secretly married Roque, after Gilot had
+                    filed for divorce. His strained relationship with Claude and Paloma was never healed.</p>
+                <p>By this time, Picasso had constructed a huge Gothic home, and could afford large villas in the south
+                    of France, such as Mas Notre-Dame-de-Vie on the outskirts of Mougins, and in the Provence-Alpes-Côte
+                    d'Azur. He was an international celebrity, with often as much interest in his personal life as his
+                    art.</p>
+                <br>
+                <h2>Later works to final years: 1949-1973</h2>
+                <p>Picasso was one of 250 sculptors who exhibited in the 3rd Sculpture International held at the
+                    Philadelphia Museum of Art in mid-1949. In the 1950s, Picasso's style changed once again, as he took
+                    to producing reinterpretations of the art of the great masters. He made a series of works based on
+                    Velázquez's painting of Las Meninas. He also based paintings on works by Goya, Poussin, Manet,
+                    Courbet and Delacroix.</p>
+
+                <p>In addition to his artistic accomplishments, Picasso made a few film appearances, always as himself,
+                    including a cameo in Jean Cocteau's Testament of Orpheus (1960). In 1955, he helped make the film Le
+                    Mystère Picasso (The Mystery of Picasso) directed by Henri-Georges Clouzot. </p>
+
+                <p>He was commissioned to make a maquette for a huge 50-foot (15 m)-high public sculpture to be built in
+                    Chicago, known usually as the Chicago Picasso. He approached the project with a great deal of
+                    enthusiasm, designing a sculpture which was ambiguous and somewhat controversial. Picasso said the
+                    figure represented the head of an Afghan Hound named Kabul. The sculpture, one of the most
+                    recognizable landmarks in downtown Chicago, was unveiled in 1967. Picasso refused to be paid
+                    $100,000 for it, donating it to the people of the city.</p>
+
+                <p>Picasso's final works were a mixture of styles, his means of expression in constant flux until the
+                    end of his life. Devoting his full energies to his work, Picasso became more daring, his works more
+                    colourful and expressive, and from 1968 to 1971 he produced a torrent of paintings and hundreds of
+                    copperplate etchings. At the time these works were dismissed by most as pornographic fantasies of an
+                    impotent old man or the slapdash works of an artist who was past his prime. Only later,
+                    after Picasso's death, when the rest of the art world had moved on from abstract expressionism, did
+                    the critical community come to see the late works of Picasso as prefiguring Neo-Expressionism.</p>
+                <br>
+                <h2>Death</h2>
+                <p>Pablo Picasso died on 8 April 1973 in Mougins, France, from pulmonary edema and a heart attack, the
+                    morning after he and his wife Jacqueline entertained friends for dinner. He was interred at the
+                    Château of Vauvenargues near Aix-en-Provence, a property he had acquired in 1958 and occupied with
+                    Jacqueline between 1959 and 1962. Jacqueline prevented his children Claude and Paloma from attending
+                    the funeral. Devastated and lonely after the death of Picasso, Jacqueline killed herself by
+                    gunshot in 1986 when she was 59 years old.</p>
+            </div>
+            <!-- LINKS APO PINAKES  -->
+            <div id="PortraitLinks" class="hide">
+                <h1>Portraits List</h1>
+                <table id="portraits-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Year</th>
+                            <th>Link</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody id="portraits-list"></tbody>
+                </table>
+            </div>
+            <div id="PaintingLinks" class="hide">
+                <h1>Paintings List</h1>
+                <table id="paintings-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Year</th>
+                            <th>Link</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody id="paintings-list">
+                    </tbody>
+                </table>
+            </div>
+            <div id="DrawingLinks" class="hide">
+                <h1>Drawings List</h1>
+                <table id="drawings-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Year</th>
+                            <th>Link</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody id="drawings-list"></tbody>
+                </table>
+            </div>
+            <div id="past" class="hide">
+                <h2>Past Exhibitions</h2>
+                <table id="past-table">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Location</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="past-list"></tbody>
+                </table>
+            </div>
+            <div id="current" class="hide">
+                <h2>Current Exhibitions</h2>
+                <table id="current-table">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Location</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="current-list"></tbody>
+                </table>
+            </div>
+            <div id="upcoming" class="hide">
+                <h2>Upcoming Exhibitions</h2>
+                <table id="upcoming-table">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Location</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="upcoming-list"></tbody>
+                </table>
+            </div>
+            <!-- PHOTOGRAFIES APO PINAKES -->
+            <ul>
+                <div id="portraitsPhotos" class="hide">
+                    <ul class="image-gallery">
+                        <li>
+                            <img src="https://i.etsystatic.com/8711792/r/il/853ff8/516391349/il_1080xN.516391349_i9lw.jpg"
+                                alt="" loading="lazy" />
+                            <div class="overlay"><span>Picasso, Self Portrait 1907</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintings/self-portrait.jpg" alt=""
+                                loading="eager" />
+                            <div class="overlay"><span>Self Portrait, 1901</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintings/portrait-of-aunt-pepa.jpg"
+                                alt="" loading="lazy" />
+                            <div class="overlay"><span>Portrait of Aunt Pepa, 1896</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintings/self-portrait-1901.jpg" alt=""
+                                loading="lazy" />
+                            <div class="overlay"><span>Self Portrait, 1901</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintings/portrait-of-dora-maar.jpg"
+                                alt="" loading="lazy" />
+                            <div class="overlay"><span>Portrait of Dora Maar, 1937</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintings/portrait-of-gertrude-stein.jpg"
+                                alt="" loading="lazy" />
+                            <div class="overlay"><span>Portrait of Gertrude Stein, 1905</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintings/portrait-of-sabartes.jpg" alt=""
+                                loading="overlay" />
+                            <div class="overlay"><span>Portrait of Sabartes, 1939</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintings/self-portrait-with-palette.jpg"
+                                alt="" loading="lazy" />
+                            <div class="overlay"><span>Self Portrait With Palette, 1906</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintings/portrait-of-ambroise-vollard.jpg"
+                                alt="" loading="lazy" />
+                            <div class="overlay"><span>Portrait of Ambroise Vollard, 1910</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintings/portrait-of-madame-hp.jpg"
+                                alt="" loading="lazy" />
+                            <div class="overlay"><span>Portrait of Madame H.P. 1952</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintings/portrait-of-a-painter-after-el-greco.jpg"
+                                alt="" loading="lazy" />
+                            <div class="overlay"><span>Portrait of a Painter, after El Greco, 1950</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="paintingsPhotos" class="hide">
+                    <ul class="image-gallery2">
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintingthumbs/figures-at-the-seaside.jpg"
+                                alt="" loading="eager" />
+                            <div class="overlay"><span>Figure At The Seaside, 1931</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintingthumbs/girl-before-mirror.jpg"
+                                alt="" loading="lazy" />
+                            <div class="overlay"><span>Girl Before A Mirror, 1932</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintingthumbs/girl-in-a-chemise.jpg"
+                                alt="" loading="lazy" />
+                            <div class="overlay"><span>Girl in a Chemise, 1904</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintingthumbs/guernica.jpg" alt=""
+                                loading="lazy" />
+                            <div class="overlay"><span>Guernica, 1937</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintingthumbs/harlequin-with-glass.jpg"
+                                alt="" loading="lazy" />
+                            <div class="overlay"><span>Harlequin with Glass, 1905</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintingthumbs/harlequin.jpg" alt=""
+                                loading="overlay" />
+                            <div class="overlay"><span>Harlequin, 1901</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintingthumbs/joie-de-vivre.jpg" alt=""
+                                loading="lazy" />
+                            <div class="overlay"><span>Joie De Vivire, 1946</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintingthumbs/la-vie.jpg" alt=""
+                                loading="lazy" />
+                            <div class="overlay"><span>La Vie, 1903</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintings/child-with-a-dove.jpg" alt=""
+                                loading="lazy" />
+                            <div class="overlay"><span>Child with a Dove, 1901 </span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/paintings/jacqueline-kneeling.jpg" alt=""
+                                loading="lazy" />
+                            <div class="overlay"><span>Jacqueline Kneeling, 1954</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="drawingsPhotos" class="hide">
+                    <ul class="image-gallery3">
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/drawings/don-quixote.jpg" alt=""
+                                loading="eager" />
+                            <div class="overlay"><span>Don Quixote</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/drawingthumbs/dove-of-peace.jpg" alt=""
+                                loading="lazy" />
+                            <div class="overlay"><span>Dove of Peace</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/drawingthumbs/dove.jpg" alt=""
+                                loading="lazy" />
+                            <div class="overlay"><span>Dove</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/drawingthumbs/femme-torero.jpg" alt=""
+                                loading="lazy" />
+                            <div class="overlay"><span>Femme Torero</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/drawingthumbs/two-seated-woman.jpg" alt=""
+                                loading="lazy" />
+                            <div class="overlay"><span>Two Seated Woman</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/drawingthumbs/bacchic-scene-with-aotaur.jpg"
+                                alt="" loading="overlay" />
+                            <div class="overlay"><span>Bacchic Scene with Aotaur</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/drawingthumbs/bouquet-of-flowers.jpg"
+                                alt="" loading="lazy" />
+                            <div class="overlay"><span>Bouquet of Flowers</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/drawingthumbs/bull-horse-woman.jpg" alt=""
+                                loading="lazy" />
+                            <div class="overlay"><span>Bull Horse Woman</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/drawingthumbs/bullfight-1.jpg" alt=""
+                                loading="lazy" />
+                            <div class="overlay"><span>Bull Fight 1</span>
+                        </li>
+                        <li>
+                            <img src="https://www.pablopicasso.org/assets/img/drawingthumbs/bullfight-2.jpg" alt=""
+                                loading="lazy" />
+                            <div class="overlay"><span>Bull Fight 2</span>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+            <!-- USER MANAGEMENT -->
+            <div id="loginform" class="hide">
+                <form class="login-container">
+                    <label for="user">Username:</label>
+                    <input type="text" id="user" name="user" placeholder="Enter your username">
+
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="pass" placeholder="Enter your password">
+
+                    <input type="button" id="buttonlogin2" value="Login" onclick="checkCredentials()">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><small>Aimilios Spyropoulos 2120289 WWW semester assignment Copyright &copy; 2024-2025</small></p>
+    </footer>
+</body>
+
+</html>
