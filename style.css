@@ -109,74 +109,246 @@ h2 {
 
 
 @media (max-width: 768px) {
-    .main-container {
+    .TitleHeader {
+        font-size: 2em;
+        letter-spacing: 15px;
+    }
+
+    body {
+        display: flex;
         flex-direction: column;
     }
 
-    aside {
-        width: 100%;
-        order: 2;
-    }
-
-    main {
-        margin-left: 0;
+    header {
         order: 1;
     }
-}
 
-@media (max-width: 600px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
-    }
-
-    .TitleHeader {
-        font-size: 1.5em;
-        letter-spacing: 20px;
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+        gap: 5px;
+        padding: 10px;
     }
 
     nav button {
-        font-size: 14px;
-        padding: 8px 16px;
+        flex: 1 1 calc(20% - 10px);
+        margin: 5px;
+        max-width: 120px;
+        font-size: 12px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: #0f6db5;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    nav button:hover {
+        background-color: #074f85;
+        transform: scale(1.05);
+    }
+
+    aside {
+        display: flex;
+        /* Flex layout for buttons */
+        flex-wrap: wrap;
+        /* Allow buttons to wrap */
+        justify-content: left;
+        /* Center the buttons */
+        align-items: center;
+        order: 3;
+        width: 100%;
+        /* Full width */
+        padding: 10px;
+        border: none;
+        /* Optional: Remove borders */
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        /* Allow buttons to wrap */
+        gap: 8px;
+        /* Reduce spacing between buttons */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    aside button {
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        padding: 6px 8px;
+        letter-spacing: 0.5px;
+        font-size: 12px;
+        flex: 1 1 auto;
+        width: 80px;
+        height: 30px;
+        margin: 5px;
+        /* font-size: 10px; */
+        /* padding: 2px; */
+        border: none;
+        border-radius: 5px;
+        background-color: #0f6db5;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        transition: all 0.3s ease;
     }
 
     main {
-        font-size: 16px;
+        order: 4;
+        margin: 0;
+        width: 100%;
+        font-size: 14px;
+        /* Smaller font size for tablets */
+        line-height: 1.4;
+        /* Adjust line height for better readability */
         padding: 10px;
+        /* Reduce padding for a compact layout */
+    }
+
+    main h1,
+    main h2 {
+        font-size: 18px;
+        /* Reduce heading sizes */
+        margin-bottom: 10px;
+        /* Adjust spacing below headings */
+    }
+
+    main p {
+        font-size: 14px;
+        /* Match paragraph font size */
+        margin-bottom: 10px;
+        /* Adjust paragraph spacing */
+        text-align: justify;
+        /* Keep text justified for readability */
+    }
+
+    footer {
+        order: 5;
+        padding: 1px 0;
+        text-align: center;
+    }
+
+    main table {
+        font-size: 14px;
+        /* Adjust font size */
+    }
+
+    main table th,
+    main table td {
+        padding: 6px;
+        /* Reduce padding further */
+        font-size: 12px;
+        /* Smaller font size for phones */
+    }
+
+    h1 {
+        text-align: left;
     }
 }
 
 @media (max-width: 480px) {
     .TitleHeader {
-        font-size: 1.2em;
+        font-size: 1.5em;
         letter-spacing: 10px;
     }
 
+    nav {
+        flex-wrap: wrap;
+        gap: 3px;
+    }
+
     nav button {
-        font-size: 12px;
-        padding: 6px 12px;
+        flex: 1 1 calc(30% - 5px);
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .wrapper {
+        gap: 3px;
+        /* Smaller gap for very small screens */
+    }
+
+    aside button {
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        padding: 4px 6px;
+        letter-spacing: 0.3px;
+        font-size: 10px;
+        width: 60px;
+        height: 25px;
     }
 
     main {
-        font-size: 14px;
+        font-size: 12px;
+        /* Smaller font size for phones */
+        line-height: 1.3;
+        /* Adjust line height for compact display */
         padding: 8px;
+        /* Further reduce padding */
+        width: 100%;
+        /* Ensure content fits in the screen width */
+    }
+
+    main h1,
+    main h2 {
+        font-size: 16px;
+        /* Reduce heading sizes further */
+        margin-bottom: 8px;
+        /* Adjust spacing */
+    }
+
+    main p {
+        font-size: 12px;
+        /* Smaller font size for paragraphs */
+        margin-bottom: 8px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    main table {
+        display: block;
+        /* Force table to act as a block for responsiveness */
+        overflow-x: auto;
+        /* Allow horizontal scrolling within the container */
+        white-space: nowrap;
+        /* Prevent text wrapping */
+    }
+
+    main table th,
+    main table td {
+        padding: 5px;
+        /* Further reduce padding for smaller devices */
+        font-size: 11px;
+        /* Reduce font size */
     }
 }
 
 main table {
     width: 200%;
-    border-collapse:collapse;
+    border-collapse: collapse;
     margin: 10px 0;
     font-size: 16px;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 /* borders twn pinakwn */
 main table th,
 main table td {
     padding: 12px 15px;
     border: 1px solid #0f6db5;
 }
+
 /* headers twn pinakwn me links/exhibitions */
 main table th {
     background-color: #0f6db5;
@@ -184,6 +356,7 @@ main table th {
     font-size: 18px;
     text-align: center;
 }
+
 /* GIA TO LOGIN FORM APO MANAGEMENT - MAIN */
 .login-container {
     display: flex;
@@ -235,4 +408,3 @@ input[type="button"]:hover {
     transform: scale(1.1);
     background-color: #0f6db5;
 }
-
